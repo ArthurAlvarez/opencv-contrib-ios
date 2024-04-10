@@ -61,6 +61,7 @@ Pod::Spec.new do |s|
     s.source           = { :http => "https://github.com/yaabukwa/opencv-contrib-ios/releases/download/v1.0.0/opencv_contrib-#{s.version.to_s}-ios.zip",
                            :sha256 => 'a9e8b61f7248f246c18b2ae4ac1457ce266962d86f487cce256c2d852e3acdfb' }
     s.frameworks       = 'Accelerate', 'AssetsLibrary', 'AVFoundation', 'CoreGraphics', 'CoreImage', 'CoreMedia', 'CoreVideo', 'Foundation', 'QuartzCore', 'UIKit'
+    s.resources = 'Resources/PrivacyInfo.xcprivacy'
     s.swift_version = '5.3'
 
     s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
